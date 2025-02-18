@@ -483,7 +483,7 @@ section h2 {
 }
 
 /* Scroll behavior for section links */
-#about, #accommodations, #experience, #location {
+#about, #accommodations, #experience {
     scroll-margin-top: 80px; /* Adjust this value based on your header height */
 }
 
@@ -519,18 +519,20 @@ section h2 {
         margin-bottom: 0.75rem;
     }
     
-    .cta-button {
-        display: inline-block;
-        font-size: 1rem;
-        padding: 0.8rem 1.5rem;
-        margin-top: 15px;
-        width: auto;
-        max-width: 80%;
-        height: auto;
-        line-height: 1.2;
-        box-sizing: border-box;
-        white-space: nowrap;
-    }
+        .cta-button {
+            display: inline-block;
+            font-size: 1rem;
+            padding: 0.8rem 1.5rem;
+            margin-top: 15px;
+            /* Remove these lines: */
+            /* width: auto;
+            max-width: 80%; */
+            height: auto;
+            line-height: 1.2;
+            box-sizing: border-box;
+            white-space: nowrap;
+        }
+    
     
     .dots-container {
         bottom: 10px;
