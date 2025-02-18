@@ -494,10 +494,7 @@ section h2 {
         margin-bottom: 0.75rem; /* Reduced spacing on mobile */
     }
     
-    .hero-content {
-        padding: 0 1.5rem;
-        transform: translateY(-30px); /* Less movement on mobile */
-    }
+ 
     
     .cta-button {
         padding: 0.8rem 1.5rem;
@@ -554,21 +551,31 @@ section h2 {
       object-position: center; /* Centers the focal point */
     }
 
-    .hero-content {
-      position: relative;
-      z-index: 2; /* Ensure it appears above the slideshow */
-      text-align: center;
-      padding: 0 20px; /* Add some side padding */
-    }
-    
     .cta-button {
-      display: inline-block;
-      font-size: 16px; /* Appropriate text size for mobile */
-      padding: 10px 20px; /* Reasonable padding */
-      margin-top: 15px; /* Space from the text above */
-      width: auto; /* Don't let it stretch full width */
-      max-width: 80%; /* But don't let it get too wide either */
-    }
+        display: inline-block;
+        font-size: 16px;
+        padding: 10px 20px;
+        margin-top: 15px;
+        width: auto;
+        max-width: 80%;
+        height: auto; /* Let the height adjust naturally */
+        line-height: normal; /* Ensure text is properly centered */
+        box-sizing: border-box; /* Include padding in height calculation */
+      }
+      
+      /* Additional fixes if the button itself is OK but just positioned poorly */
+      .hero-content {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        padding: 0 20px;
+        margin-bottom: 20px; /* Add space below the content */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
 }
 
 
