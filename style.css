@@ -570,7 +570,9 @@ section h2 {
     }
 
     .slide {
-        height: 100%;
+        width: 100%;
+        height: 100%; /* Ensure it fills the container */
+        object-fit: cover; /* Maintain image aspect ratio while covering the container */
         overflow: hidden;
         display: flex;
         align-items: center;
