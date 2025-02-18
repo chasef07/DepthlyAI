@@ -519,19 +519,20 @@ section h2 {
         margin-bottom: 0.75rem;
     }
     
-        .cta-button {
-            display: inline-block;
-            font-size: 1rem;
-            padding: 0.8rem 1.5rem;
-            margin-top: 15px;
-            /* Remove these lines: */
-            /* width: auto;
-            max-width: 80%; */
-            height: auto;
-            line-height: 1.2;
-            box-sizing: border-box;
-            white-space: nowrap;
-        }
+    .cta-button {
+        display: inline-block;
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+        background-color: var(--primary-color);
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: var(--transition);
+        margin-top: 15px;
+        line-height: 1.2;
+        box-sizing: border-box;
+        white-space: nowrap;
+    }
     
     
     .dots-container {
