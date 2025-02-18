@@ -494,12 +494,6 @@ section h2 {
         margin-bottom: 0.75rem; /* Reduced spacing on mobile */
     }
     
- 
-    
-    .cta-button {
-        padding: 0.8rem 1.5rem;
-        font-size: 1rem;
-    }
     
     .dots-container {
         bottom: 10px;
@@ -551,32 +545,35 @@ section h2 {
       object-position: center; /* Centers the focal point */
     }
 
+
+        
+    /* Combine both .cta-button styles into one complete definition */
     .cta-button {
         display: inline-block;
-        font-size: 16px;
-        padding: 10px 20px;
+        font-size: 1rem;  /* Using your original font size */
+        padding: 0.8rem 1.5rem;  /* Using your original padding */
         margin-top: 15px;
         width: auto;
         max-width: 80%;
-        height: auto; /* Let the height adjust naturally */
-        line-height: normal; /* Ensure text is properly centered */
-        box-sizing: border-box; /* Include padding in height calculation */
-      }
-      
-      /* Additional fixes if the button itself is OK but just positioned poorly */
-      .hero-content {
+        height: auto !important;  /* Force auto height */
+        line-height: 1.2;  /* Better for text alignment */
+        box-sizing: border-box;
+        white-space: nowrap;  /* Prevent text wrapping inside button */
+        }
+        
+    .hero-content {
         position: relative;
         z-index: 2;
         text-align: center;
         padding: 0 20px;
-        margin-bottom: 20px; /* Add space below the content */
+        margin-bottom: 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-      }
+        }
 
-}
+    }
 
 
 /* Additional fix for very small screens */
