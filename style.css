@@ -521,16 +521,12 @@ section h2 {
     }
 
     .cta-button {
-        display: inline-block;
-        font-size: 1rem;
-        padding: 0.8rem 1.5rem;
-        margin-top: 15px;
-        width: auto;
-        max-width: 80%;
-        height: auto;
-        line-height: 1.2;
-        box-sizing: border-box;
-        white-space: nowrap;
+        font-size: 1.1rem; /* Slightly larger text for mobile */
+        padding: 1rem 2rem; /* More generous padding */
+        width: auto; /* Let the button size naturally */
+        min-width: 200px; /* Prevent button from becoming too narrow */
+        max-width: none; /* Remove previous restriction */
+        white-space: nowrap; /* Keep text in single line */
     }
     
 
