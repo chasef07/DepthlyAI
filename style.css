@@ -581,7 +581,6 @@ section h2 {
     .slide img {
         width: 100%;
         height: 100%;
-        margin-left: -10%;
         object-fit: cover;
         object-position: center;
     }
