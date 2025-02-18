@@ -1,5 +1,13 @@
-/* Base Styles */
-:root {
+/**
+ * Shared Happy Farm - Main Stylesheet
+ * 
+ * A responsive design for an eco-farm website with mobile-first approach
+ * featuring a clean, nature-inspired color palette and smooth transitions.
+ */
+
+/* Base Variables and Reset
+   ========================================================================== */
+   :root {
     --primary-color: #3a5a40;
     --secondary-color: #588157;
     --accent-color: #dad7cd;
@@ -21,7 +29,8 @@ body {
     background-color: var(--background-color);
 }
 
-/* Header & Navigation */
+/* Header Navigation
+   ========================================================================== */
 .header {
     position: fixed;
     width: 100%;
@@ -39,6 +48,18 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-image {
+    height: 110px;
+    width: auto;
+    object-fit: contain;
 }
 
 .logo h1 {
@@ -71,7 +92,8 @@ body {
     margin-top: -7px; 
 }
 
-/* Mobile Menu */
+/* Mobile Menu
+   ========================================================================== */
 .mobile-menu-toggle {
     display: none;
     flex-direction: column;
@@ -163,7 +185,8 @@ body {
     visibility: visible;
 }
 
-/* Hero Section */
+/* Hero Section with Slideshow
+   ========================================================================== */
 .hero {
     height: 100vh;
     position: relative;
@@ -177,7 +200,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--primary-color); /* Using theme color as fallback */
+    background-color: var(--primary-color); /* Theme color as fallback */
 }
 
 .slide {
@@ -186,7 +209,7 @@ body {
     height: 100%;
     opacity: 0;
     transition: opacity 1s ease-in-out;
-    background-color: var(--primary-color); /* Ensures each slide has themed background */
+    background-color: var(--primary-color); /* Themed background for each slide */
 }
 
 .slide.active {
@@ -200,14 +223,14 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.3); /* Overlay to ensure text readability */
+    background: rgba(0, 0, 0, 0.3); /* Dark overlay for text readability */
 }
 
 .slide img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center; /* Ensures image is centered */
+    object-position: center;
     display: block; /* Prevents inline image spacing issues */
 }
 
@@ -224,23 +247,23 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    transform: translateY(-50px); /* This will move the content up */
-    box-sizing: border-box; /* Ensures padding doesn't break layout */
+    transform: translateY(-50px);
+    box-sizing: border-box;
 }
 
 .hero-content h2 {
     font-size: 3.5rem;
     margin-bottom: 1rem;
     color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* This adds shadow for better visibility */
-    line-height: 1.2; /* Improves readability */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    line-height: 1.2;
 }
 
 .hero-content p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Added shadow for visibility */
-    line-height: 1.5; /* Improves readability */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    line-height: 1.5;
 }
 
 .cta-button {
@@ -262,6 +285,7 @@ body {
     background-color: var(--secondary-color);
 }
 
+/* Slideshow Navigation Dots */
 .dots-container {
     position: absolute;
     bottom: 20px;
@@ -285,7 +309,8 @@ body {
     background-color: white;
 }
 
-/* Section Styles */
+/* Common Section Styles
+   ========================================================================== */
 .section-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -299,7 +324,8 @@ section h2 {
     color: var(--primary-color);
 }
 
-/* About Section */
+/* About Section
+   ========================================================================== */
 .about-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -314,7 +340,8 @@ section h2 {
     border-radius: 8px;
 }
 
-/* Accommodation Cards */
+/* Accommodation Cards
+   ========================================================================== */
 .accommodation-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -327,9 +354,9 @@ section h2 {
     overflow: hidden;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
     transition: var(--transition);
-    display: flex;           /* Added */
-    flex-direction: column;  /* Added */
-    height: 100%;           /* Added */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .card img {
@@ -340,7 +367,7 @@ section h2 {
 
 .card h3, .card p {
     padding: 1rem;
-    padding-bottom: 0.5rem;  /* Reduced bottom padding */
+    padding-bottom: 0.5rem;
 }
 
 .card:hover {
@@ -351,11 +378,12 @@ section h2 {
     font-weight: 600;
     color: var(--primary-color);
     font-size: 1.2rem;
-    padding: 0.5rem 1rem;    /* Adjusted padding */
-    margin-top: auto;        /* Added - pushes price to bottom */
+    padding: 0.5rem 1rem;
+    margin-top: auto; /* Pushes price to bottom of card */
 }
 
-/* Experience Grid */
+/* Experience Grid
+   ========================================================================== */
 .experience-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -369,49 +397,8 @@ section h2 {
     border-radius: 8px;
 }
 
-/* Footer */
-.footer {
-    background: var(--primary-color);
-    color: white;
-    padding: 4rem 0;
-    text-align: center; /* Ensures everything is centered */
-}
-
-.footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
-}
-
-.social-media {
-    margin-top: 1rem; /* Adds spacing between text and icons */
-}
-
-.social-media img {
-    width: 50px;
-    height: 50px;
-    margin: 0 15px;
-    transition: transform 0.3s;
-    filter: brightness(0) invert(1); /* This makes the icons white */
-}
-
-.social-media img:hover {
-    transform: scale(1.1);
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.logo-image {
-    height: 110px;  /* Adjust this value based on your logo size */
-    width: auto;
-    object-fit: contain;
-}
-
-/* Location Section */
+/* Location Section
+   ========================================================================== */
 .location-section {
     padding: 4rem 0;
     background-color: var(--background-color);
@@ -480,16 +467,50 @@ section h2 {
 .map-container iframe {
     display: block;
     border: none;
-    margin-bottom: -6px; /* This helps eliminate that small gap */
+    margin-bottom: -6px; /* Eliminates small gap under iframe */
 }
 
-/* Scroll behavior for section links */
+/* Footer
+   ========================================================================== */
+.footer {
+    background: var(--primary-color);
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.social-media {
+    margin-top: 1rem;
+}
+
+.social-media img {
+    width: 50px;
+    height: 50px;
+    margin: 0 15px;
+    transition: transform 0.3s;
+    filter: brightness(0) invert(1); /* Makes icons white */
+}
+
+.social-media img:hover {
+    transform: scale(1.1);
+}
+
+/* Scroll Behavior
+   ========================================================================== */
 #about, #accommodations, #experience {
-    scroll-margin-top: 80px; /* Adjust this value based on your header height */
+    scroll-margin-top: 80px; /* Adjusts for fixed header height */
 }
 
-/* Responsive Design */
+/* Responsive Design
+   ========================================================================== */
 @media (max-width: 768px) {
+    /* Navigation changes for mobile */
     .nav-links {
         display: none;
     }
@@ -498,6 +519,7 @@ section h2 {
         display: flex;
     }
     
+    /* Layout adjustments */
     .about-grid {
         grid-template-columns: 1fr;
     }
@@ -533,7 +555,7 @@ section h2 {
         white-space: nowrap;
     }
     
-
+    /* Slideshow adjustments */
     .dots-container {
         bottom: 10px;
     }
@@ -544,6 +566,7 @@ section h2 {
         margin: 0 3px;
     }
     
+    /* Footer adjustments */
     .footer-content {
         grid-template-columns: 1fr;
         text-align: center;
@@ -557,6 +580,7 @@ section h2 {
         height: 75px;
     }
 
+    /* Location section adjustments */
     .location-grid {
         grid-template-columns: 1fr;
     }
@@ -569,9 +593,10 @@ section h2 {
         min-height: 350px;
     }
 
+    /* Slide adjustments */
     .slide {
         width: 100%;
-        height: 100%; /* Ensure it fills the container */
+        height: 100%;
         overflow: hidden;
         display: flex;
         align-items: center;
@@ -586,7 +611,8 @@ section h2 {
     }
 }
 
-/* Additional fix for very small screens */
+/* Additional adjustments for smaller screens
+   ========================================================================== */
 @media (max-width: 480px) {
     .hero-content h2 {
         font-size: 2rem;

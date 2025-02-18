@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Basic Meta Information -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Experience sustainable living at our farm eco stay - Connect with nature, learn organic farming, and enjoy peaceful countryside living">
     <title>Shared Happy Farm</title>
+    
+    <!-- Favicon and Stylesheets -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    
+    <!-- Font Preloading for Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Main Navigation Header -->
     <header class="header">
         <nav class="nav-container">
+            <!-- Logo Container -->
             <div class="logo">
                 <img src="images/shf_logo.jpeg" alt="Shared Happy Farm Logo" class="logo-image">
             </div>
+            
+            <!-- Desktop Navigation Links -->
             <div class="nav-links">
                 <a href="#about">About</a>
                 <a href="#accommodations">Stay</a>
@@ -24,15 +33,18 @@
                 <a href="#location">Find Us</a>
                 <a href="https://api.whatsapp.com/send?phone=8562092823908&text=Sabaidee!%20I%20am%20interested%20in%20booking%20a%20stay." class="book-button">Book Now</a>
             </div>
-            <!-- Add this inside your header, after the nav-links -->
+            
+            <!-- Mobile Menu Toggle Button -->
             <button class="mobile-menu-toggle" aria-label="Toggle menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
 
+            <!-- Mobile Menu Overlay -->
             <div class="overlay"></div>
 
+            <!-- Mobile Menu Container -->
             <div class="mobile-menu">
                 <div class="mobile-menu-links">
                     <a href="#about">About</a>
@@ -43,35 +55,37 @@
                 <a href="https://api.whatsapp.com/send?phone=8562092823908&text=Sabaidee!%20I%20am%20interested%20in%20booking%20a%20stay." class="mobile-book-button">Book Now</a>
             </div>      
         </nav>
-        
     </header>
 
+    <!-- Main Content Container -->
     <main>
+        <!-- Hero Section with Image Slideshow -->
         <section class="hero">
             <div class="slideshow-container">
+                <!-- Slideshow Images -->
                 <div class="slide fade">
-                    <img src="images/family_dinner.jpeg" alt="Family Dinner">
+                    <img src="images/family_dinner.jpeg" alt="Family Dinner at Shared Happy Farm">
                 </div>
                 <div class="slide fade">
-                    <img src="images/group_waterfall.jpeg" alt="Group Waterfall">
+                    <img src="images/group_waterfall.jpeg" alt="Group visiting the waterfall near Shared Happy Farm">
                 </div>
                 <div class="slide fade">
-                    <img src="images/gardenview.jpeg" alt="Garden view ">
+                    <img src="images/gardenview.jpeg" alt="Beautiful garden view at Shared Happy Farm">
                 </div>
                 <div class="slide fade">
-                    <img src="images/aerial_view.jpeg" alt="Aerial View ">
+                    <img src="images/aerial_view.jpeg" alt="Aerial view of Shared Happy Farm">
                 </div>
                 <div class="slide fade">
-                    <img src="images/lettuce_plants.jpeg" alt="Lettuce Plants">
+                    <img src="images/lettuce_plants.jpeg" alt="Organic lettuce plants growing at Shared Happy Farm">
                 </div>
                 <div class="slide fade">
-                    <img src="images/shfwaterfalltrek.jpeg" alt="Waterfall Trek">
+                    <img src="images/shfwaterfalltrek.jpeg" alt="Waterfall trek experience at Shared Happy Farm">
                 </div>
                 <div class="slide fade">
-                    <img src="images/fresh_salad.jpeg" alt="Fresh Salad">
+                    <img src="images/fresh_salad.jpeg" alt="Fresh farm-to-table salad at Shared Happy Farm">
                 </div>
                 
-                <!-- Navigation dots -->
+                <!-- Slideshow Navigation Dots -->
                 <div class="dots-container">
                     <span class="dot" onclick="currentSlide(1)"></span>
                     <span class="dot" onclick="currentSlide(2)"></span>
@@ -79,10 +93,11 @@
                     <span class="dot" onclick="currentSlide(4)"></span>
                     <span class="dot" onclick="currentSlide(5)"></span>
                     <span class="dot" onclick="currentSlide(6)"></span>
-                    <span class="dot" onclick="currentSlide(6)"></span>
+                    <span class="dot" onclick="currentSlide(7)"></span>
                 </div>
             </div>
             
+            <!-- Hero Content Overlay -->
             <div class="hero-content">
                 <h2>Shared Happy Farm</h2>
                 <p>Experience Nature, Live Simply, Stay Happy!</p>
@@ -90,6 +105,7 @@
             </div>
         </section>
 
+        <!-- About Section -->
         <section id="about" class="about-section">
             <div class="section-container">
                 <h2>Welcome to Our Farm</h2>
@@ -97,34 +113,38 @@
                     <div class="about-text">
                         <p>Nestled on the scenic Bolaven Plateau, our farm thrives in cool mountain air and nutrient-rich volcanic soil—perfect for growing coffee, avocados, passionfruit, and a variety of other fruits and vegetables. We set out on this journey with a simple goal: to cultivate a more sustainable, fulfilling life while sharing the beauty of farm life in Laos with visitors.</p>
                     </div>
+                    <!-- Instagram Embed for Social Proof -->
                     <div class="about-image">
                         <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DGLH0cbC7Ky/?utm_source=ig_embed" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:100%;">
                         </blockquote>
                         <script async src="https://www.instagram.com/embed.js"></script>
-                      </div>
-                      
+                    </div>
                 </div>
             </div>
         </section>
 
+        <!-- Accommodations Section -->
         <section id="accommodations" class="accommodations-section">
           <div class="section-container">
             <h2>Stay</h2> 
             <div class="accommodation-cards">
+                <!-- Family Bungalow Card -->
                 <div class="card">
-                    <img src="images/family_bungalow.jpeg" alt="Family bungalow" loading="lazy" decoding="async">
+                    <img src="images/family_bungalow.jpeg" alt="Family bungalow at Shared Happy Farm" loading="lazy" decoding="async">
                     <h3>Family Bungalow</h3>
                     <p>Cozy bungalow with farm views and attached bathroom for up to 4 guests</p>
                     <p class="price">350,000 kip</p>
                 </div>
+                <!-- Standard Bungalow Card -->
                 <div class="card">
-                    <img src="images/bungalow.jpeg" alt="Bungalow" loading="lazy" decoding="async">
+                    <img src="images/bungalow.jpeg" alt="Bungalow at Shared Happy Farm" loading="lazy" decoding="async">
                     <h3>Bungalow</h3>
                     <p>Bungalow with shared bathroom for up to 2 guests</p>
                     <p class="price">250,000 kip</p>
                 </div>
+                <!-- Dormitory Card -->
                 <div class="card">
-                    <img src="images/dormitory.jpg" alt="Dormitory" loading="lazy" decoding="async">
+                    <img src="images/dormitory.jpg" alt="Dormitory at Shared Happy Farm" loading="lazy" decoding="async">
                     <h3>Dormitory</h3>
                     <p>Shared dormitory style accommodation</p>
                     <p class="price">100,000 kip</p>
@@ -133,10 +153,12 @@
           </div>
         </section>
 
+        <!-- Experience Section -->
         <section id="experience" class="experience-section">
             <div class="section-container">
                 <h2>Experience</h2>
                 <div class="experience-grid">
+                    <!-- Experience Items -->
                     <div class="experience-item">
                         <h3>Organic Farming</h3>
                         <p>Learn about sustainable farming practices</p>
@@ -157,10 +179,12 @@
             </div>
         </section>
 
+        <!-- Location Section with Map -->
         <section id="location" class="location-section">
             <div class="section-container">
                 <h2>Find Us</h2>
                 <div class="location-grid">
+                    <!-- Directions Information -->
                     <div class="location-info">
                         <h3>How to Get Here</h3>
                         <p>Located on the beautiful Bolaven Plateau, our farm is easily accessible from Pakse.</p>
@@ -174,25 +198,29 @@
                             <a href="https://maps.google.com/?q=15.287082175916206, 106.32394992505432" class="directions-button" target="_blank">Get Directions</a>
                         </div>
                     </div>
+                    <!-- Google Maps Embed -->
                     <div class="map-container">
                         <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3814.8910376121844!2d106.32131691475857!3d15.286958289449303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3115251a298ac62b%3A0xde0273113e7e690!2sShared%20Happy%20Farm!5e0!3m2!1sen!2s!4v1676527532934!5m2!1sen!2s"  
-                        width="100%" 
-                        height="450" 
-                        style="border:0; display:block; margin:0; padding:0;" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3814.8910376121844!2d106.32131691475857!3d15.286958289449303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3115251a298ac62b%3A0xde0273113e7e690!2sShared%20Happy%20Farm!5e0!3m2!1sen!2s!4v1676527532934!5m2!1sen!2s"  
+                            width="100%" 
+                            height="450" 
+                            style="border:0; display:block; margin:0; padding:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            aria-label="Google Maps location of Shared Happy Farm">
+                        </iframe>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- Footer Section -->
     <footer class="footer">
         <div class="footer-content">
             <p>© 2025 Shared Happy Farm. All rights reserved.</p>
+            <!-- Social Media Links -->
             <div class="social-media">
                 <a href="https://wa.me/8562092823908" target="_blank" aria-label="WhatsApp">
                     <img src="images/whatsapp-svgrepo-com.svg" alt="WhatsApp">
@@ -210,6 +238,7 @@
         </div>
     </footer>
     
+    <!-- JavaScript Files -->
     <script src="slideshow.js"></script>
 </body>
 </html>
