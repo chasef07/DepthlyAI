@@ -68,6 +68,7 @@ body {
     color: white !important;
     padding: 0.5rem 1rem;
     border-radius: 4px;
+    margin-top: -7px; 
 }
 
 /* Mobile Menu */
@@ -518,10 +519,21 @@ section h2 {
         font-size: 2.5rem;
         margin-bottom: 0.75rem;
     }
+
+    .cta-button {
+        display: inline-block;
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+        margin-top: 15px;
+        width: auto;
+        max-width: 80%;
+        height: auto;
+        line-height: 1.2;
+        box-sizing: border-box;
+        white-space: nowrap;
+    }
     
 
-    
-    
     .dots-container {
         bottom: 10px;
     }
