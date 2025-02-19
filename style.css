@@ -396,6 +396,77 @@ section h2 {
     background: var(--accent-color);
     border-radius: 8px;
 }
+/* Menu Section
+   ========================================================================== */
+   
+.menu-section {
+    padding: 4rem 0;
+    background-color: var(--background-color);  /* Changed to match site variables */
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.menu-category {
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);  /* Matched card shadow */
+    transition: var(--transition);  /* Added site transition */
+}
+
+.menu-category h3 {
+    color: var(--primary-color);  /* Changed to primary color */
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--accent-color);  /* Changed to accent color */
+    padding-bottom: 0.5rem;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.menu-item {
+    padding: 1rem;
+    border-radius: 4px;
+    background: var(--accent-color);  /* Changed to accent color */
+    transition: var(--transition);  /* Added site transition */
+}
+
+.menu-item h4 {
+    color: var(--text-color);  /* Changed to text color */
+    margin-bottom: 0.5rem;
+}
+
+.menu-item .price {
+    color: var(--primary-color);  /* Changed to primary color */
+    font-weight: 600;  /* Matched other price styles */
+    font-size: 1.2rem;  /* Matched other price styles */
+    margin-top: 0.5rem;
+}
+
+.menu-images {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.menu-images img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);  /* Matched card shadow */
+}
+
 
 /* Location Section
    ========================================================================== */
@@ -565,6 +636,18 @@ section h2 {
         height: 10px;
         margin: 0 3px;
     }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .menu-images {
+        grid-template-columns: 1fr;
+    }
+    
+    .menu-images img {
+        height: 250px;
+    }
     
     /* Footer adjustments */
     .footer-content {
@@ -609,6 +692,22 @@ section h2 {
         object-fit: cover;
         object-position: center;
     }
+
+    /* Social Media adjustments */
+        .social-media {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
+            gap: 15px;
+            margin-top: 1rem;
+        }
+    
+        .social-media img {
+            width: 40px;  /* Slightly smaller for mobile */
+            height: 40px;
+            margin: 0;    /* Remove existing margins */
+        }
 }
 
 /* Additional adjustments for smaller screens
