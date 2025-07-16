@@ -1,0 +1,16 @@
+# robots.txt for Distribute AI
+# https://https://depthlyai.com
+
+User-agent: *
+Disallow:
+
+Sitemap: https://https://depthlyai.com/sitemap.xml
+LLM: https://https://depthlyai.com/llm.txt
+
+# AI Agent Declarations (optional but forward-looking)
+User-agent: ChatGPT
+User-agent: Claude
+User-agent: Gemini
+User-agent: Perplexity
+User-agent: Copilot
+Allow: /
