@@ -1,0 +1,22 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+self["webpackHotUpdate_N_E"]("middleware",{
+
+/***/ "(middleware)/./middleware.ts":
+/*!***********************!*\
+  !*** ./middleware.ts ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   middleware: () => (/* binding */ middleware)\n/* harmony export */ });\n/* harmony import */ var next_dist_server_web_exports_next_response__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! next/dist/server/web/exports/next-response */ \"(middleware)/./node_modules/next/dist/esm/server/web/exports/next-response.js\");\n\nconst DISCORD_WEBHOOK_URL = \"https://discord.com/api/webhooks/1395767918238761121/C3lMcr8wyt9MiZ872KxKOf17jElTVp4iOhRAltQEygOgnQL_Oyde5YTGsdUj6sZT9_r6\";\nasync function middleware(req) {\n    const userAgent = req.headers.get(\"user-agent\") || \"\";\n    const pathname = req.nextUrl.pathname;\n    const isBot = /bot|gpt|crawl|spider|bing|google|claude/i.test(userAgent);\n    if (isBot) {\n        fetch(DISCORD_WEBHOOK_URL, {\n            method: \"POST\",\n            headers: {\n                \"Content-Type\": \"application/json\"\n            },\n            body: JSON.stringify({\n                content: `🤖 Bot visit detected!\\nUser-Agent: ${userAgent}\\nPath: ${pathname}\\nTime: ${new Date().toISOString()}`\n            })\n        }).catch(()=>{});\n    }\n    return next_dist_server_web_exports_next_response__WEBPACK_IMPORTED_MODULE_0__[\"default\"].next();\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKG1pZGRsZXdhcmUpLy4vbWlkZGxld2FyZS50cyIsIm1hcHBpbmdzIjoiOzs7OztBQUF1RDtBQUV2RCxNQUFNQyxzQkFBc0I7QUFFckIsZUFBZUMsV0FBV0MsR0FBZ0I7SUFDL0MsTUFBTUMsWUFBWUQsSUFBSUUsT0FBTyxDQUFDQyxHQUFHLENBQUMsaUJBQWlCO0lBQ25ELE1BQU1DLFdBQVdKLElBQUlLLE9BQU8sQ0FBQ0QsUUFBUTtJQUNyQyxNQUFNRSxRQUFRLDJDQUEyQ0MsSUFBSSxDQUFDTjtJQUU5RCxJQUFJSyxPQUFPO1FBQ1RFLE1BQU1WLHFCQUFxQjtZQUN6QlcsUUFBUTtZQUNSUCxTQUFTO2dCQUFFLGdCQUFnQjtZQUFtQjtZQUM5Q1EsTUFBTUMsS0FBS0MsU0FBUyxDQUFDO2dCQUNuQkMsU0FBUyxDQUFDLG9DQUFvQyxFQUFFWixVQUFVLFFBQVEsRUFBRUcsU0FBUyxRQUFRLEVBQUUsSUFBSVUsT0FBT0MsV0FBVyxHQUFHLENBQUM7WUFDbkg7UUFDRixHQUFHQyxLQUFLLENBQUMsS0FBTztJQUNsQjtJQUVBLE9BQU9uQix1RkFBaUI7QUFDMUIiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9fTl9FLy4vbWlkZGxld2FyZS50cz80MjJkIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IE5leHRSZXF1ZXN0LCBOZXh0UmVzcG9uc2UgfSBmcm9tICduZXh0L3NlcnZlcidcblxuY29uc3QgRElTQ09SRF9XRUJIT09LX1VSTCA9ICdodHRwczovL2Rpc2NvcmQuY29tL2FwaS93ZWJob29rcy8xMzk1NzY3OTE4MjM4NzYxMTIxL0MzbE1jcjh3eXQ5TWlaODcyS3hLT2YxN2pFbFRWcDRpT2hSQWx0UUV5Z09nblFMX095ZGU1WVRHc2RVajZzWlQ5X3I2J1xuXG5leHBvcnQgYXN5bmMgZnVuY3Rpb24gbWlkZGxld2FyZShyZXE6IE5leHRSZXF1ZXN0KSB7XG4gIGNvbnN0IHVzZXJBZ2VudCA9IHJlcS5oZWFkZXJzLmdldCgndXNlci1hZ2VudCcpIHx8ICcnXG4gIGNvbnN0IHBhdGhuYW1lID0gcmVxLm5leHRVcmwucGF0aG5hbWVcbiAgY29uc3QgaXNCb3QgPSAvYm90fGdwdHxjcmF3bHxzcGlkZXJ8YmluZ3xnb29nbGV8Y2xhdWRlL2kudGVzdCh1c2VyQWdlbnQpXG5cbiAgaWYgKGlzQm90KSB7XG4gICAgZmV0Y2goRElTQ09SRF9XRUJIT09LX1VSTCwge1xuICAgICAgbWV0aG9kOiAnUE9TVCcsXG4gICAgICBoZWFkZXJzOiB7ICdDb250ZW50LVR5cGUnOiAnYXBwbGljYXRpb24vanNvbicgfSxcbiAgICAgIGJvZHk6IEpTT04uc3RyaW5naWZ5KHtcbiAgICAgICAgY29udGVudDogYPCfpJYgQm90IHZpc2l0IGRldGVjdGVkIVxcblVzZXItQWdlbnQ6ICR7dXNlckFnZW50fVxcblBhdGg6ICR7cGF0aG5hbWV9XFxuVGltZTogJHtuZXcgRGF0ZSgpLnRvSVNPU3RyaW5nKCl9YFxuICAgICAgfSksXG4gICAgfSkuY2F0Y2goKCkgPT4ge30pXG4gIH1cblxuICByZXR1cm4gTmV4dFJlc3BvbnNlLm5leHQoKVxufVxuXG5cbiJdLCJuYW1lcyI6WyJOZXh0UmVzcG9uc2UiLCJESVNDT1JEX1dFQkhPT0tfVVJMIiwibWlkZGxld2FyZSIsInJlcSIsInVzZXJBZ2VudCIsImhlYWRlcnMiLCJnZXQiLCJwYXRobmFtZSIsIm5leHRVcmwiLCJpc0JvdCIsInRlc3QiLCJmZXRjaCIsIm1ldGhvZCIsImJvZHkiLCJKU09OIiwic3RyaW5naWZ5IiwiY29udGVudCIsIkRhdGUiLCJ0b0lTT1N0cmluZyIsImNhdGNoIiwibmV4dCJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(middleware)/./middleware.ts\n");
+
+/***/ })
+
+});
