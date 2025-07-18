@@ -6,7 +6,7 @@ export const config = {
   matcher: [
     '/((?!api|_next/static|_next/image|favicon.ico).*)',
   ],
-  runtime: 'experimental-edge',
+  
 }
 
 const DISCORD_WEBHOOK_URL = 'https://discord.com/api/webhooks/1395767918238761121/C3lMcr8wyt9MiZ872KxKOf17jElTVp4iOhRAltQEygOgnQL_Oyde5YTGsdUj6sZT9_r6'
