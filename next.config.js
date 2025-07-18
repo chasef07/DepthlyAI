@@ -1,8 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Remove the runtime config from here - it belongs in middleware.js
   experimental: {
-    // Force Edge Runtime for middleware
-    runtime: 'edge',
+    // Add any other experimental features you need here
+    // but NOT runtime configuration
   },
   // Ensure webpack doesn't include Node.js polyfills
   webpack: (config, { isServer }) => {
