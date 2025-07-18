@@ -7,6 +7,44 @@
     <meta name="keywords" content="AI SEO, Generative Engine Optimization, GEO, small business SEO, local SEO tools, LLM visibility, AI search ranking, Answer Engine Optimizaiton, AEO,  Depthly GEO services">
     <meta name="author" content="DepthlyAI GEO Services">
     
+<!-- Add this script to your HTML pages -->
+<script>
+  (function() {
+    // Track page load
+    async function trackVisit() {
+      try {
+        const response = await fetch('/api/track-bot', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            url: window.location.href,
+            timestamp: new Date().toISOString()
+          })
+        });
+        
+        const result = await response.json();
+        
+        // Optional: Log to console for debugging
+        if (result.detected) {
+          console.log('Bot visit detected and logged');
+        }
+      } catch (error) {
+        console.error('Error tracking visit:', error);
+      }
+    }
+  
+    // Track immediately on load
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', trackVisit);
+    } else {
+      trackVisit();
+    }
+  })();
+  </script>
+
+
     <!-- Canonical URL -->
     <link rel="canonical" href="https://DepthlyAI.com">
     
