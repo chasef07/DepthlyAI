@@ -400,6 +400,24 @@
       <p>Depthly helps your brand appear in AI-generated answers, not just search results. Let us audit your site and unlock your generative visibility potential.</p>
       <a href="/contact" class="button">Get a Free GEO Audit</a>
     </section>
+
+    <script>
+      // Add this to your HTML pages or React components
+      (function() {
+        // Simple bot detection call
+        fetch('/api/track-bot', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            url: window.location.href
+          })
+        }).catch(() => {
+          // Silently fail - don't break the page if tracking fails
+        });
+      })();
+      </script>
   
     <footer>
       <p>&copy; 2025 DepthlyAI. Generative Engine Optimization for the AI-first future.</p>
