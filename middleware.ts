@@ -1,19 +1,13 @@
-// middleware.ts
 import { NextRequest, NextResponse } from 'next/server'
 
 export function middleware(req: NextRequest) {
-  const userAgent = req.headers.get('user-agent') || 'unknown'
-  const ip = req.ip || req.headers.get('x-forwarded-for') || 'unknown'
-  const pathname = req.nextUrl.pathname
+  const userAgent = req.headers.get('user-agent') || ''
+  const isBot = /bot|gpt|crawl|spider|bing|google|claude/i.test(userAgent)
 
-  // Example: Log only bots
-  if (/bot|GPT|Google|Bing|Claude|crawler/i.test(userAgent)) {
-    fetch('https://your-endpoint.com/log', {
-      method: 'POST',
-      body: JSON.stringify({ userAgent, ip, pathname }),
-      headers: { 'Content-Type': 'application/json' },
-    }).catch(err => console.error('log fail', err))
+  if (isBot) {
+    console.log(`[BOT DETECTED] User-Agent: ${userAgent} Path: ${req.nextUrl.pathname}`)
   }
 
   return NextResponse.next()
 }
+
