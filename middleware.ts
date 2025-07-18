@@ -21,3 +21,10 @@ export async function middleware(req: NextRequest) {
 }
 
 
+
+// Add this to prevent middleware from running on static files
+export const config = {
+  matcher: [
+    '/((?!api|_next/static|_next/image|favicon.ico).*)',
+  ],
+}
